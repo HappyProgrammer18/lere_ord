@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    
+.nutid{position: relative;
+    z-index: -2;
+    left: 30px;
+    min-width: 90px;
+    max-width: 120px;
+    padding: 0 5px;
+    border-radius: 5px;
+    height: 42px;
+    background-color:rgb(228, 216, 245);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nutidl{position: relative;
+    z-index: -2;
+    left: 30px;
+    min-width: 90px;
+    max-width: 120px;
+    padding: 0 5px;
+    border-radius: 5px;
+    height: 42px;
+    background-color: rgb(228, 216, 245);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nutid2{position: relative;
+    z-index: -2;
+    left: 30px;
+    min-width: 90px;
+    max-width: 120px;
+    padding: 0 5px;
+    border-radius: 5px;
+    height: 42px;
+    background-color: rgb(228, 216, 245);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nutid3{position: relative;
+    z-index: -2;
+    left: 30px;
+    min-width: 90px;
+    max-width: 120px;
+    padding: 0 5px;
+    border-radius: 5px;
+    height: 42px;
+    background-color: rgb(228, 216, 245);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.datid{position: relative;
+    left: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    min-width: 80px;
+    max-width: 120px;
+    padding: 0 10px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: rgb(101, 160, 95);
+    transition: 0.5s;
+}
+.datidw{position: relative;
+    left: -120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    min-width: 80px;
+    max-width: 120px;
+    padding: 0 10px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: rgb(101, 160, 95);
+    transition: 0.5s;
+}
+.datidl{position: relative;
+    left: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    min-width: 80px;
+    max-width: 120px;
+    padding: 0 10px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: rgb(101, 160, 95);
+    transition: 0.5s;
+}
+.datid2{position: relative;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    min-width: 80px;
+    max-width: 120px;
+    padding: 0 10px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: rgb(101, 160, 95);
+    transition: 0.5s;
+}
+.fornutid{position: absolute;
+    left: 20px;
+    z-index: -3;
+    min-width: 80px;
+    max-width: 120px;
+    padding: 0 10px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fornutidl{position: absolute;
+    left: 20px;
+    z-index: -3;
+    min-width: 80px;
+    max-width: 120px;
+    padding: 0 10px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bydem{position: absolute;
+    left: 35px;
+    z-index: 3;
+    min-width: 80px;
+    max-width: 120px;
+    padding: 0 10px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fordatid{position: absolute;
+    left: 15px;
+    z-index: -3;
+    min-width: 80px;
+    max-width: 120px;
+    padding: 0 10px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.translate-nutid
+{position: absolute;
+    left: 35px; border-radius: 5px;
+    top: 100px;
+    z-index: -6;
+    width: 100px;opacity: 0;
+    height: 30px;padding-bottom: 2px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;transition-delay: 0.4s;
+    justify-content: center;
+}  
+.translate-nutidl
+{position: absolute;
+    left: 35px; border-radius: 5px;
+    top: 100px;
+    z-index: -6;
+    width: 100px;opacity: 0;
+    height: 30px;padding-bottom: 2px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;transition-delay: 0.4s;
+    justify-content: center;
+}  
+.translate-fordatid
+{position: absolute;
+    left: 15px; border-radius: 5px;
+    top: -96px;
+    z-index: -6;
+    width: 100px;opacity: 0;
+    height: 30px;padding-bottom: 2px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;transition-delay: 0.4s;
+    justify-content: center;
+}  
+.translate-datid
+{position: absolute;
+    left: -115px; border-radius: 5px;
+    top: 64px;
+    z-index: -6;
+    min-width: 100px;
+    max-width: 150px;opacity: 0;
+    height: 30px;padding-bottom: 2px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;transition-delay: 0.4s;
+    justify-content: center;
+}  
+.translate-datidl
+{position: absolute;
+    left: -135px; border-radius: 5px;
+    top: 64px;
+    z-index: -6;
+    min-width: 100px;
+    max-width: 150px;opacity: 0;
+    height: 30px;padding-bottom: 2px;
+    background-color: cadetblue;padding: 0 7px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;transition-delay: 0.4s;
+    justify-content: center;
+}  
+.translate-fornutid
+{position: absolute;
+    left: 169px; border-radius: 5px;
+    top: 64px;
+    z-index: -6;
+    min-width: 100px;
+    max-width: 150px;opacity: 0;
+    height: 30px;padding-bottom: 2px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;transition-delay: 0.4s;
+    justify-content: center;
+}  
+.translate-fornutidl
+{position: absolute;
+    left: 148px; border-radius: 5px;
+    top: 64px;
+    z-index: -6;
+    min-width: 100px;
+    max-width: 150px;opacity: 0;padding: 0 7px;
+    height: 30px;padding-bottom: 2px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;transition-delay: 0.4s;
+    justify-content: center;
+} 
+.btn
+{position: absolute;
+    left: 70px; border-radius: 5px;
+    top: 61px;
+    z-index: -6;
+    width: 30px;
+    font-size: 20px;opacity: 0;
+    height: 30px;padding-bottom: 2px;
+    background-color: cadetblue;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;transition-delay: 1s;
+    justify-content: center;
+} 
+
+        label{
+            margin-bottom: 100px;margin-left: 60px;margin-right: 60px;
+        }
+     .container {
+  display: inline-flex;
+  position: relative;
+  padding-left: 5px;
+
+  margin-bottom: 202px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.q .container.hide {
+	display: none;
+}
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.infinitive {  display: flex;
+  position: absolute;
+align-items: center;
+justify-content: center;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width:164px;
+  color: aliceblue;
+  border-radius: 10px;
+  background-color: #28314e;
+}
+.tag{position: absolute;
+    left: 15px; border-radius: 5px;
+    top: -96px;
+    z-index: -6;
+    width: 100px;opacity: 0;
+    height: 22px;padding-bottom: 2px;
+    background-color: rgb(186, 186, 186);
+    transition: 0.5s;
+    display: flex;
+    align-items: center;transition-delay: 1s;
+    justify-content: center;
+}
+/* On mouse-over, add a grey background color */
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked ~.nutid {
+  transform: translateY(100px);
+}
+.container input:checked ~.nutid2 {
+  transform: translateY(50px);
+}
+.container input:checked ~.nutidl {
+  transform: translateY(120px);
+}
+.container input:checked ~.nutid3 {
+  transform:  translate(70px ,80px);
+}
+.container input:checked ~.datid {
+ transform:  translate(-150px ,60px);
+}
+.container input:checked ~.datidw {
+  transform:  translate(-70px ,80px);
+}
+.container input:checked ~.datidl {
+ transform:  translate(-150px ,39px);
+}
+.container input:checked ~.datid2 {
+  transform:  translate(-70px ,80px);
+}
+.container input:checked ~.fornutid {
+ transform: translate(149px,60px);
+}
+.container input:checked ~.fornutidl {
+ transform: translate(149px,39px);
+}
+.container input:checked ~.fordatid {
+  transform: translateY(-100px);
+}
+.container input:checked ~.translate-nutid {
+ opacity: 1;  transform: translateY(42px);
+}
+.container input:checked ~.translate-nutidl {
+ opacity: 1;  transform: translateY(62px);
+}
+.container input:checked ~.translate-datid {
+ opacity: 1;  transform: translateY(38px);
+}
+.container input:checked ~.translate-datidl {
+ opacity: 1;  transform: translateY(17px);
+}
+.container input:checked ~.translate-fornutid {
+ opacity: 1;  transform: translateY(38px);
+}
+.container input:checked ~.translate-fornutidl {
+ opacity: 1;  transform: translateY(17px);
+}
+.container input:checked ~.translate-fordatid {
+ opacity: 1;  transform: translateY(38px);
+}
+.container input:checked ~.btn {
+ opacity: 1; z-index: 6;
+}
+.container input:checked ~.tag {
+ opacity: 1;  transform: translateY(-25px);
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.infinitive:after {
+  content: "";
+  position: absolute;
+  display: flex;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .infinitive:after {
+  display: flex;
+}
+
+/* Style the checkmark/indicator */
+
+.q{position: relative;
+left: 50%;
+  display: flex;
+flex-direction: column;
+align-items: center;
+scale: 4;
+
+}
+.item{
+  background-color: aqua;scale: 3;
+}
+.page{position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;scale: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(216, 216, 216, 0.212);
+  z-index: 10;
+}
+.t{
+  height: 200px;
+}
+.info{
+  width: 450px;
+  height: 230px;
+  border-radius: 20px;
+  background-color: #fff;
+  border:2px solid #aaa;
+  padding: 30px;
+  padding-top: 30px;
+}
+.plus{
+  position: absolute;
+  top: 455px;
+  left: 785px;
+  border-radius: 7px;
+  width: 38px;scale: 3;
+  height: 38px;
+}
+h1{
+  margin-bottom: 10000px;
+}
+.minus{
+  position: absolute;
+  top: 455px;scale: 3;
+  left: 670px;
+  border-radius: 7px;
+  width: 38px;
+  height: 38px;
+}
+.txt{
+  position: absolute;
+  top: 455px;
+  left: 735px;
+  border-radius: 7px;
+  width: 38px;
+  height: 38px;
+}
+.pagination{font-size: 23px;line-height: 35px;}
+.i{
+  position: relative;
+  top: -120px;
+  left: -55px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  font-size: 20px;
+  color: #aaa;
+  background-color: rgba(240, 248, 255, 0);
+}
+#id{
+            width: 500px;
+            background-color: rgb(167, 113, 42);
+            height: 200px;
+            position: absolute;
+            left: 30%;
+            border: 3px solid #aaa;
+            border-radius: 15px;
+        }
+        .menu{
+  display: inline;
+  width: 75px;
+  height: 30px;
+  background-color: beige;
+  margin-bottom: 30px;
+}
+#elastic{
+position: relative;
+left: -25px;
+margin-bottom: 200px;
+}
+  </style>
+</head>
+<body>
+ 
+  <div class="t"></div>
+  <div id="t"></div>
+  <div class="q">
+    <h1>adjectiv</h1>
+    <a href="index.html" class="menu">vb </a>
+    <a href="advb.html" class="menu">advb </a>
+    <a href="konj.html" class="menu">konj </a>
+    <a href="adj.html" class="menu">adj </a>
+    <a href="præp.html" class="menu">præp </a>
+    <div class="header"></div>
+      <input type="text" id="elastic">
+</div>
+
+
+<script>
+  var q=document.querySelector('.q');
+  function ord2(anfinitiv,nutid,datid,fornutid,fordatid,button){
+    const labe2l=document.createElement('label');
+    if(fordatid==0&&button==0){labe2l.innerHTML=`<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">accepteret</span>  <span class="nutid">${nutid}</span><span class="datid">${datid}</span>
+        <span class="fornutid">${fornutid}</span>`;
+        
+}
+else if(button==0){labe2l.innerHTML=`<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">accepteret</span>  <span class="nutid">${nutid}</span><span class="datid">${datid}</span>
+        <span class="fornutid">${fornutid}</span><span class="fornutid">${fordatid}</span><span class="tag"></span>`;
+        
+}
+
+
+else if(fordatid==0){
+  labe2l.innerHTML=`<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">accepteret</span>  <span class="nutid">${mas[i]}</span><span class="datid">${mas[i+=1]}</span>
+        <span class="fornutid">${mas[i+=1]}</span>  
+        <span class="translate-nutid">${mas[i+=1]}</span> <span class="translate-datid">${mas[i+=1]}</span>
+        <button class="btn">...</button>`;
+}
+
+
+else{ div.innerHTML= `<div class="anfinitiv">${anfinitiv}</div><div class="nutid">${nutid}</div>
+    <div class="datid">${datid}</div><div class="fornutid">${fornutid}</div>
+    <div class="fordatid">${fordatid}</div><div class="bydem">${bydem}</div>
+    <button>uh</button>`;}
+   q.appendChild(labe2l);
+}
+let ii=0;
+let r=0;
+let f=0;
+let ord=[[1,`
+omhyggelig= уважний, ретельний
+уважний, ретельний`],[1,2,3,4]];
+ord[0][0]=`uhrhfeugihoj
+wofihofnbwiohpn`;
+
+ord[0][1]=`u2hrhfeugihoj
+wofihofnbwiohpn`;
+ord[0][2]=`uhrhfeugihoj
+wofihofnbwiohpn
+wjjfepjwpfw
+wfwpmfpwjfwnf
+wfwnfpwnfownfowfo`;
+
+function foo(infinitiv,nutid,datid,fornutid,fordatid,translatenutid,translatedatid,translatefornutid,translatefordatid,tag){
+
+   if(datid==1&&fornutid==1){
+  return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutid2">${nutid}</span>
+         `;
+}
+else if(datid==0){ return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutid2">${nutid}</span>
+      `;}
+else if(datid.length>8&&translatefornutid==2){
+  return `<input type="radio" id="huey" name="drone" value="huey"  />
+  <span class="infinitive">${infinitiv}</span>  <span class="nutid3">${nutid}</span><span class="datidw">${datid}</span>
+      `;
+}
+else if(translatefornutid.length>13&&fordatid!=0){
+  return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutidl">${nutid}</span><span class="datidl">${datid}</span>
+        <span class="fornutidl">${fornutid}</span>  
+        <span class="translate-nutidl">${translatenutid}</span> <span class="translate-datidl">${translatedatid}</span><span class="translate-fornutidl">${translatefornutid}</span>
+        <span class="fordatid">${fordatid}</span>
+      <span class="translate-fordatid">${translatefordatid}</span><span class="tag">${tag}</span> `;
+}
+else if(translatefornutid.length>13){
+  return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutidl">${nutid}</span><span class="datidl">${datid}</span>
+        <span class="fornutidl">${fornutid}</span>  
+        <span class="translate-nutidl">${translatenutid}</span> <span class="translate-datidl">${translatedatid}</span><span class="translate-fornutidl">${translatefornutid}</span>
+        `;
+}
+if(translatenutid==2){
+  return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutid3">${nutid}</span><span class="datid2">${datid}</span>
+       <span class="fordatid">${fordatid}</span>
+      <span class="translate-fordatid">${translatefordatid}</span><span class="tag">${tag}</span>
+        `;
+}
+if(fornutid==3){
+  return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutid2">${nutid}</span>
+       <span class="fordatid">${fordatid}</span>
+      <span class="translate-fordatid">${translatefordatid}</span><span class="tag">${tag}</span>
+        `;
+}
+if(translatedatid==2){
+  return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutid">${nutid}</span><span class="datid">${datid}</span>
+        <span class="fornutid">${fornutid}</span>  <span class="fordatid">${fordatid}</span>
+<span class="translate-fordatid">${translatefordatid}</span><span class="tag">${tag}</span>
+        `;
+}
+if(translatefornutid==10){
+  return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutid3">${nutid}</span><span class="datid2">${datid}</span>
+        <span class="fordatid">${fordatid}</span>
+<span class="translate-fordatid">${translatefordatid}</span><span class="tag">${tag}</span> `;
+}
+if(datid!=1&&fornutid==1){
+  return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutid3">${nutid}</span><span class="datid2">${datid}</span>
+      `;
+}
+else if(datid==2){ return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutid">${nutid}</span>
+      `;}
+else if(fordatid==0){
+  return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutid">${nutid}</span><span class="datid">${datid}</span>
+        <span class="fornutid">${fornutid}</span> 
+        <span class="translate-nutid">${translatenutid}</span> <span class="translate-datid">${translatedatid}</span><span class="translate-fornutid">${translatefornutid}
+        `;
+}
+
+else{
+  
+    return `<input type="radio" id="huey" name="drone" value="huey"  />
+        <span class="infinitive">${infinitiv}</span>  <span class="nutid">${nutid}</span><span class="datid">${datid}</span>
+        <span class="fornutid">${fornutid}</span>  <span class="fordatid">${fordatid}</span>
+        <span class="translate-nutid">${translatenutid}</span> <span class="translate-datid">${translatedatid}</span><span class="translate-fornutid">${translatefornutid}</span><span class="translate-fordatid">${translatefordatid}</span><span class="tag">${tag}</span>
+        `;
+  }
+
+}
+
+ord[1][1]=`1
+1
+1
+1
+1
+1
+`;
+// 5 strok po 42 bukBe
+let mm=[
+  [1,
+  `vågen= лежати, уважний
+  ще можно сказати в з'вязку з
+  частиною дня, коли не спите
+  `],
+  [1,`
+omhyggelig= уважний, ретельний
+
+omhyggeligere= уважніший, ретельнніший
+omhyggeligst=
+най.уважніший,най.ретельнніший`],
+[1,`tilbage= назад, повернути
+може перекладатися як= залишилося часу.
+`],
+
+[1,`rar= добрий
+може перекладатися як= ніжний і турвоиливий. `],
+[1,`sej= жорсткий, міцний, напруженний
+в сленгу означає круто.
+Так тут є сленг. `],
+[1,  `mangen
+використовується коли говоримо про
+колькість чогось.`],
+[1,  `megen, meget= багато, достатньо
+віжливо памйятати що megen слід
+використовувати чогось багато,
+а meget коли чогось багато і воно
+незліченно як от наприклад вода, пісок.`],
+[3,     'qw','we','er'],
+[3,     'qw','we','er'],
+[3,     'qw','we','er'],
+  [4,   `wfegrtrf
+  efgrfe
+  efg   vgyhujnbdhvgscfdgysuhjfbdvdwetrthgrteg
+  rfe
+  ofehirjofwojihugyfyguhnbeguh`,
+  `ihegh
+  wfihwfhiw
+  wofwfhfiw`,'grytyj','defgr']];
+
+let u=1;
+  let mas=[
+//infinitive   nutid       datid       fornutid      fordatid tr-nutid   tr-datid     tr-fornutid tr-fordatid   
+'glad',       'glade',   'gladere',   'gladest',        0,    'радий',   'дуже.радий',   'счастливий',   '5','vb',1,
+'vågen',    'уважний',    'лежати',       1,       0,    'лежати',   'уважний',       0,       'uy','sub',0,
+'sjov',       'sjovt-t',   'sjovere',   'sjovest',  'sjov',   'смішний',   'веселий',    'най.смішніший','весело','sub',1,
+'ærlig',      'ærlig-t',  'ærligere',  'ærligst',       0,   'честний',  'честніший',   'най.честніший','весело','sub',1,
+'sjælden','sjælden-t', 'sjældnere', 'sjældnest',        0,  'рідкісний', 'рідкісніший','самий.рідкісний',       'ugy',     0,1,
+'hyppig'  ,'hyppig-t', 'hyppigere',  'hyppigst',        0,     'частий',  'частіший',  'самий.частий',       'ugy',     0,1,
+'omhyggelig' ,'уважний','ретельний',     1     ,        1,     'тест',     'тест',          'тест',       'ugy',     0,0,
+'spændende' ,'захоплююче',     2,          3,      'spændende','тест',     'тест',          'тест',       '?',     'vb',1,//***** 
+'god'        ,'god-t',     'bedre',     'best',         0,    'добре',     'краще',     'най.краще',     'ugy',     0,1,
+'tilbage'    ,'назад',     'повернути',   1,     0,     'тест',     'тест',          'тест',       'ugy',     0,0,
+'flot'       ,'flotte',   'flotere', 'flottest',        0,     'гарний', 'більш.гарний',          'найгарніший',       'ugy',     0,1,
+'rar'        ,'rart',     'rarere',     'rarest',       0,   'добрий',     'добріший',          'най.добріший',       'ugy',     0,0,
+//'åben'        ,'åbent',     'åbene',     'åbnere',    0,     'тест',     'тест',          'тест',       'ugy',     0,1,
+'berømt'     ,'berømt',   'berømte', 'berømtest',       0,   'відомий',   'відомий',     'най.відоміший',       'ugy',     0,1,
+'ens',      'ідентичний','однаковий',     1,            0,    'лежати',   'уважний',          0,            'uy','sub',1,
+'mindre'        ,'менше',     1,   3,                'lidt'  , 'тест',     'тест',          'тест',          'трохи','advb', 1,
+'mere'        ,'більше',     1,           1,            0,     'тест',     'тест',          'тест',       'ugy',     0,1,
+//'steget',     'steget',   'steget',   'stegne',         0,     'тест',     'тест',          'тест',       'ugy',     0,1,
+'vis / viis'        ,'vist',     'visere',     'visest',     'vise',     'досвіченіший',     'досвітчений',          'най.досвіченіший',       'показувати',     'vb',1,
+'bærbare-t','портативний',    1,         1,             0,     'тест',     'тест',          'тест',       'ugy',     0,1,
+'sand'        ,'sandt',   'sandere',  'sandest',       0,     'правда', 'правдивіше',  'най.правдивіший','ugy',     0,1,
+'lad'         ,'ladt',    'ladere',   'ladest',        'lade',     'ледачій',     'більш.ледачій',          'най.ледачіший',       'дозволено',     'vb',1,
+'sej'        ,'sejt',     'sejere',   'sejest',        0,     'жорсткий',     'більш.жорсткий',          'най.жорсткіший',       'ugy',     0,0,
+'stadig-t'  ,'продовжує',     1,        3,          'stadig'  , 'тест',     'тест',          'тест',          'трохи','advb', 1,
+'skøn'        ,'skønt',  'skønnere',  'skønnest',    'skønt', 'чудово', 'чудовіший',  'най.чудовіший',    'хоча',     'konj',1,
+'bar-t'        ,'голий',     1,          3,     'bare',     'тест',          'тест',       'ugy',     'просто',  'konj',1,
+'flink'       ,'flinkt',   'flinktere', 'flinktest',        0,     'добрий', 'добріший', 'най.добріший',  'ugy',     0,1,
+'travl'      ,'travlt',  'travlere',  'travlest',       0,   'зайнятий','більш.зайнятий','най.зайнятіший','ugy',     0,1,
+'mangen'      ,'mangt',     'mange',      1,            1,     'тест',     'тест',          'тест',       'ugy',     0,0,
+'megen'        ,'meget',     'mere',   'mest',          0,    'багато',   'багато',       'найбільше',    'ugy',     0,0,
+'тест'        ,'тест',     'тест',     'тест',          1,     'тест',     'тест',          'тест',       'ugy',     0,1,
+'тест'        ,'тест',     'тест',     'тест',          1,     'тест',     'тест',          'тест',       'ugy',     0,1,
+'тест'        ,'тест',     'тест',     'тест',          1,     'тест',     'тест',          'тест',       'ugy',     0,1,
+'тест'        ,'тест',     'тест',     'тест',          1,     'тест',     'тест',          'тест',       'ugy',     0,1,
+'тест'        ,'тест',     'тест',     'тест',          1,     'тест',     'тест',          'тест',       'ugy',     0,1,
+'тест'        ,'тест',     'тест',     'тест',          1,     'тест',     'тест',          'тест',       'ugy',     0,1,
+'тест'        ,'тест',     'тест',     'тест',          0,     'тест',     'тест',          'тест',       'ugy',     0,1]
+  for(let i=0;i<mas.length;i++){          
+    const  q=document.querySelector('.q');
+        const labe2l=document.createElement('label');
+     labe2l.classList.add('container')
+     labe2l.innerHTML=foo(mas[i],mas[i+=1],mas[i+=1],mas[i+=1],mas[i+=1],mas[i+=1],mas[i+=1],mas[i+=1],mas[i+=1],mas[i+=1])
+const con=document.getElementsByClassName('container')
+    
+     
+mas[i+=1];if(mas[i]==0){
+  const btn=document.createElement('button');
+        btn.classList.add('btn');
+        btn.innerHTML='...'
+        btn.setAttribute('id',ii);
+        labe2l.appendChild(btn); 
+        btn.addEventListener('click',()=>{r=1;let indd=btn.id;console.log(indd)
+          const divv=document.createElement('div');
+          divv.classList.add('page');
+          divv.innerHTML=`<div class="info"></div>`
+          document.body.appendChild(divv);
+          const btnX=document.createElement('button');
+          const page=document.querySelector('.page');
+          page.classList.add('pagebtn')
+          page.setAttribute('id','id2');
+          btnX.innerHTML='X';
+          btnX.classList.add('i');
+          page.appendChild(btnX);
+          btnX.addEventListener('click',()=>{
+            const m=document.getElementsByClassName('pagebtn');const m2=document.getElementById('id2');
+const paa2=m2.parentNode;
+paa2.removeChild(m2);
+          });
+          const textt=document.querySelector('.info');
+          const pagination=document.createElement('span');
+          pagination.classList.add('pagination');
+         let index=document.getElementsByClassName('btn');
+          pagination.innerText=mm[indd][r];
+          textt.appendChild(pagination);
+          const plus=document.createElement('button');
+          const minus=document.createElement('button');
+          const txt=document.createElement('span');
+          plus.classList.add('plus');
+          minus.classList.add('minus');
+          txt.classList.add('txt');
+          plus.innerHTML='>';
+          txt.innerText='1'+'/'+mm[indd][0];
+          minus.innerHTML='<';
+         console.log(indd,r);if(mm[indd][0]==1){} else{
+          textt.appendChild(minus);
+          textt.appendChild(plus);
+          textt.appendChild(txt);} 
+         plus.addEventListener('click',()=>{   r++; if(r>=mm[indd][0]){r=mm[indd][0]} console.log(f,r);      pagination.innerText=mm[indd][r];  txt.innerText=r+'/'+mm[indd][0];
+          textt.appendChild(pagination);});
+          minus.addEventListener('click',()=>{   r--;if(r<=1){r=1} console.log(f,r);     pagination.innerText=mm[indd][r];txt.innerText=r+'/'+mm[indd][0];
+          textt.appendChild(pagination);});
+        });     ii++;}
+
+q.appendChild(labe2l);
+        
+      
+      
+   
+}
+
+document.querySelector('#elastic').oninput = function(){
+    let val = this.value.trim();
+    let elasticItems = document.querySelectorAll('.q .container');
+    if (val != ''){
+        elasticItems.forEach(function(elem){
+          if (elem.innerText.search(val) == -1) {
+            elem.classList.add('hide');
+          }
+          else { 
+            elem.classList.remove('hide');
+          }
+        });
+    }
+  }
+
+  function inserMark(string,pos,len ){
+    return string.slice(0, pos)+ '<mark>' + string.slice(pos, pos+len) + '</mark>'+string.slice(pos+len);
+
+  }
+
+
+
+</script>
+
+</body>
+</html>
